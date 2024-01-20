@@ -6,7 +6,7 @@ from selenium.webdriver.support import expected_conditions as EC
 WAIT_TIME = 10
 MORE_NEWS_BUTTON_CLASS = "btn_mas-noticias-largo"
 ARTICLE_TAG_NAME = "article"
-NUMER_OF_ITERATIONS = 1
+NUMER_OF_ITERATIONS = 20
 
 POLITICA_IDS = ["m389-1-390", " m989-1-990", "m1462-1-1463", "m1775-1-1776"]
 DEPORTES_IDS = ["m1452-1-1453", "m1071-1-1072", "m1292-1-1293", "m1701-1-1702"]
