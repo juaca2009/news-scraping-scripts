@@ -1,4 +1,4 @@
-class new:
+class New:
     def __init__(self, date, title, type_new):
         self.date = date
         self.title = title
