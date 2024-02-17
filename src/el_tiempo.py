@@ -2,6 +2,7 @@ from load_driver import load_driver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait 
 from selenium.webdriver.support import expected_conditions as EC
+from model.new import new
 
 WAIT_TIME = 10
 MORE_NEWS_BUTTON_CLASS = "btn_mas-noticias-largo"
@@ -19,8 +20,8 @@ def click_more_news_and_collect_articles(driver, element_id):
             EC.visibility_of_element_located((By.CLASS_NAME, MORE_NEWS_BUTTON_CLASS))
         )
         enlace_mas_noticias.click()
-        articles = driver.find_elements(By.TAG_NAME, ARTICLE_TAG_NAME)
         driver.implicitly_wait(5)
+    articles = driver.find_elements(By.TAG_NAME, ARTICLE_TAG_NAME)
     driver.back()
 
 def go_to_main_page(driver):
