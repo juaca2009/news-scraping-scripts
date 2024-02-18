@@ -8,10 +8,10 @@ from model.new import New
 WAIT_TIME = 10
 MORE_NEWS_BUTTON_CLASS = "btn_mas-noticias-largo"
 ARTICLE_TAG_NAME = "article"
-NUMER_OF_ITERATIONS = 2
+NUMER_OF_ITERATIONS = 10
 
 POLITICA_IDS = ["m389-1-390", "m989-1-990", "m1462-1-1463", "m1775-1-1776"]
-DEPORTES_IDS = ["m1452-1-1453", "m1071-1-1072", "m867-1-868", "m355-1-356"]
+DEPORTES_IDS = ["m1452-1-1453", "m1071-1-1072", "m1701-1-1702", "m355-1-356"]
 TECNOSFERA_IDS = ["m1024-1-1025", "m1304-1-1305", "m1577-1-1578"]
 
 def click_more_news_and_collect_articles(driver, element_id, type_new):
@@ -60,5 +60,5 @@ if __name__ == "__main__":
     driver.get('https://www.eltiempo.com/')
 
     #get_politica(driver)
-    #get_deportes(driver)
-    get_tecnosfera(driver)
+    get_deportes(driver)
+    #get_tecnosfera(driver)
